@@ -57,7 +57,10 @@ body {
     width: 100%;
     height: 35px;
   }
-  
+
+.countdown #week::before {
+    content: "Days";
+  }
   .countdown #day::before {
     content: "Days";
   }
