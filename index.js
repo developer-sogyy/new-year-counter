@@ -1,3 +1,4 @@
+const weekEl = document.getElementById("week");
 const dayEl = document.getElementById("day");
 const hourEl = document.getElementById("hour");
 const minuteEl = document.getElementById("minute");
@@ -15,11 +16,14 @@ function updateCountdown() {
   const minute = second * 60;
   const hour = minute * 60;
   const day = hour * 24;
+  const week = day * 7;
 
+  const w = Math.floor(gap / week);
   const d = Math.floor(gap / day);
   const h = Math.floor((gap % day) / hour);
   const m = Math.floor((gap % hour) / minute);
   const s = Math.floor((gap % minute) / second);
+  weekEl.innerText = w;
   dayEl.innerText = d;
   hourEl.innerText = h;
   minuteEl.innerText = m;
