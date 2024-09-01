@@ -21,6 +21,7 @@ mil25();
 updateCountdown26();
 mil26();
 
+
 function updateCountdown25() {
   const now = new Date().getTime();
   const gap = newYearTime25 - now;
