@@ -96,3 +96,11 @@ h2 {
 .countdown #milisecond26::before {
   content: "Miliseconds";
 }
+
+
+@media screen and (max-width: 600px)
+{
+  h2 {
+  letter-spacing: 2px;
+}
+}
