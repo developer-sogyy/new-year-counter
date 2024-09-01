@@ -19,7 +19,7 @@ function updateCountdown() {
   const week = day * 7;
 
   const w = Math.floor(gap / week);
-  const d = Math.floor(gap / day);
+  const d = Math.floor((gap % week) / day);
   const h = Math.floor((gap % day) / hour);
   const m = Math.floor((gap % hour) / minute);
   const s = Math.floor((gap % minute) / second);
